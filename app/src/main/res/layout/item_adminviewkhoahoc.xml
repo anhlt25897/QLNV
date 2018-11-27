@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgdeletekhad"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/dete" />
+            <ImageView
+                android:layout_below="@id/imgedit"
+                android:id="@+id/imgAvatarkhad"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/imgAvatarkhad"
+                android:id="@+id/lll"
+                android:textAlignment="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:id="@+id/hotenlotkhad"
+                    android:text="Họ Tên Lót"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="6dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Việt Phi"
+                    android:textSize="15dp"
+                    android:id="@+id/tenkhad"
+                    android:textStyle="bold"
+                    android:layout_marginRight="4dp"
+                    android:textColor="#000"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/ln1"
+                android:layout_below="@+id/lll"
+                android:layout_height="wrap_content">
+                <ImageView android:layout_marginEnd="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/hoinghi"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#CECECE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hội Nghị - Hội Thảo"
+                        />
+                    <TextView
+                        android:id="@+id/txthothaokhad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:textSize="13dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:textColorLink="#282828"
+                        android:text="Link" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/ln1"
+                android:id="@+id/ln2"
+                android:layout_height="wrap_content">
+                <ImageView android:layout_marginEnd="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/congtrinh"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#CECECE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Công Trình Nghiên Cứu"
+                        />
+                    <TextView
+                        android:id="@+id/txtcongtrinhkhad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:textSize="13dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:textColorLink="#282828"
+                        android:text="Link" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/ln2"
+                android:id="@+id/ln3"
+                android:layout_height="wrap_content">
+                <ImageView android:layout_marginEnd="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/detai"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#CECECE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Đề Tài Nghiên Cứu"
+                        />
+                    <TextView
+                        android:id="@+id/txtdetaikhad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:textSize="13dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:textColorLink="#282828"
+                        android:text="Link" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/ln3"
+                android:id="@+id/ln4"
+                android:layout_height="wrap_content">
+                <ImageView android:layout_marginEnd="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/giaotrinh"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#CECECE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Giáo Trình"
+                        />
+                    <TextView
+                        android:id="@+id/txtgiaotrinhkhad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:textSize="13dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:textColorLink="#282828"
+                        android:text="Link" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/ln4"
+                android:id="@+id/ln5"
+                android:layout_height="wrap_content">
+                <ImageView android:layout_marginEnd="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/baibao"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#CECECE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Bài Báo"
+                        />
+                    <TextView
+                        android:id="@+id/txtbaibaokhad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:textSize="13dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:textColorLink="#282828"
+                        android:text="Link" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/ln5"
+                android:id="@+id/ln6"
+                android:layout_height="wrap_content">
+                <ImageView android:layout_marginEnd="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/sach"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#CECECE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Sách"
+                        />
+                    <TextView
+                        android:id="@+id/txtsachkhad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#282828"
+                        android:textSize="13dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:textColorLink="#282828"
+                        android:text="Link" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/viewaccount"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:background="#000"
+                android:layout_below="@+id/ln6"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

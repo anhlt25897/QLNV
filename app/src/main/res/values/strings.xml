@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Quản Lý Nhân Sự</string>
+    <string name="giangvien">Giảng Viên</string>
+    <string name="soyeulilich">Sơ Yếu Lí Lịch</string>
+    <string name="themGV">Thêm Giảng Viên</string>
+    <string name="capnhatGV">Cập Nhật Giảng Viên</string>
+    <string name="action_settings">Settings</string>
+    <string name="sinhvien">Sinh Viên</string>
+    <string name="themsinhvien">Thêm Sinh Viên</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="thongtin">Quản Lý Sơ Yếu Lí Lịch</string>
+    <string name="login">Đăng nhập hệ thống</string>
+    <string name="dangky">Đăng ký thành viên</string>
+    <string name="gvdn">Giảng viên đã nghỉ</string>
+    <string name="khview">Xem Khoa Học Của Giảnh Viên</string>
+    <string name="qlkh">Quản Lý Khoa Học</string>
+    <string name="themqlkh">Thêm Quản Lý Khoa Học</string>
+    <string name="suaqlkh">Cập Nhật Quản Lý Khoa Học</string>
+</resources>

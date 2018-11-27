@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CapNhatActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:id="@+id/appAccount"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarcapnhatgv"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/title_capnhatgv"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật thông tin"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#ff0000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Mã GV:" />
+            <EditText
+                android:id="@+id/editTextMaGVCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Mã Giảng Viên" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Họ Tên Lót:" />
+            <EditText
+                android:id="@+id/edithoTenLotCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Họ Tên Lót"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Tên:" />
+            <EditText
+                android:id="@+id/editenCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Tên"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Ngày sinh:" />
+            <EditText
+                android:id="@+id/editngaysinhCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Chọn ngày"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Giới Tính:" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/radioGroup_diffLevelCN">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:onClick="RadioButtonClicked"
+                    android:id="@+id/radioButton_namCN"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:onClick="RadioButtonClicked"
+                    android:id="@+id/radioButton_nuCN"
+                    android:checked="false" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Quê Quán:" />
+            <EditText
+                android:id="@+id/editquequanCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Quê Quán"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Dân Tộc:" />
+            <EditText
+                android:id="@+id/editdantocCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Dân Tộc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Tôn Giáo:" />
+            <EditText
+                android:id="@+id/edittongiaoCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Tôn Giáo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Số CMND:" />
+            <EditText
+                android:id="@+id/editsocmndCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Số CMND"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Hộ Khẩu Thường Trú:" />
+            <EditText
+                android:id="@+id/edithkttCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Hộ Khẩu Thường Trú"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Chổ Ở Hiện Tại:" />
+            <EditText
+                android:id="@+id/editcohtCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Chổ Ở Hiện Tại"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Điện Thoại:" />
+            <EditText
+                android:id="@+id/editdienthoaiCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Điện Thoại"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Email:" />
+            <EditText
+                android:id="@+id/editemailCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Đơn Vị Công Tác:" />
+            <EditText
+                android:id="@+id/editdvctCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Đơn Vị Công Tác"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Học Vị" />
+            <EditText
+                android:id="@+id/edithocviCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Học Vị"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Năm Nhận Học Vị:" />
+            <EditText
+                android:id="@+id/editnamnhvCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Năm Nhận Học Vị"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Chức Danh Khoa Hoc:" />
+            <EditText
+                android:id="@+id/editcdkhCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Chức Danh Khoa Học"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nhập Năm Bổ Nhiệm:" />
+            <EditText
+                android:id="@+id/editnambonhiemCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Năm Bổ Nhiệm"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Link ảnh:" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:id="@+id/btn_get_avatar"
+                    android:text="Chọn ảnh đại diện"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:id="@+id/img_avatar_thumbnail"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <Button android:id="@+id/bntcapnhat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cập nhật"
+                    android:clickable="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff00"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"/>
+                <Button android:id="@+id/bntthoatCN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thoát"
+                    android:clickable="true"
+                    android:layout_marginLeft="80dp"
+                    android:background="#ff0000"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

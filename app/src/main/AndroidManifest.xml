@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qlnhansu.app.quanlynhansu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.GiangVienAcitivity"
+            android:label="@string/giangvien" />
+        <activity
+            android:name=".Activity.SoYeuLiLichActivity"
+            android:label="@string/soyeulilich" />
+        <activity
+            android:name=".Activity.ThemActivity"
+            android:label="@string/themGV" />
+        <activity
+            android:name=".Activity.CapNhatActivity"
+            android:label="@string/capnhatGV" />
+        <activity
+            android:name=".Activity.MainAdminActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activity.GiangVienActivity2"
+            android:label="@string/giangvien" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/login" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="@string/dangky" />
+        <activity
+            android:name=".Activity.MainUserActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activity.GiangVienActivity3"
+            android:label="@string/giangvien" />
+        <activity
+            android:name=".Activity.XemThongTin"
+            android:label="@string/thongtin" />
+        <activity
+            android:name=".Activity.GiangVienDaNghiActivity"
+            android:label="@string/gvdn" />
+        <activity
+            android:name=".Activity.ViewAdminKhoaHocActivity"
+            android:label="@string/khview" />
+        <activity
+            android:name=".Activity.QuanLyKhoaHoc"
+            android:label="@string/qlkh" />
+        <activity
+            android:name=".Activity.ThemQLKhoaHocActivity"
+            android:label="@string/themqlkh" />
+        <activity android:name=".Activity.CapNhatQLKHActivity"
+            android:label="@string/suaqlkh"></activity>
+    </application>
+
+</manifest>
