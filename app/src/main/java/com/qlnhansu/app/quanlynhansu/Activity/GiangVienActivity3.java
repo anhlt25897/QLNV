@@ -63,6 +63,14 @@ public class GiangVienActivity3 extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_keyboard_backspace_white_32dp);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         DocDuLieu(urlgetdata);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GiangVienActivity3.this,ThemActivity.class);
+                startActivity(intent);
+            }
+        });
         edt3=(EditText)findViewById(R.id.text3);
         //edittest tìm kiếm
         edt3.addTextChangedListener(new TextWatcher() {

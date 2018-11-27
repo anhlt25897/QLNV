@@ -24,6 +24,7 @@
         </activity>
         <activity
             android:name=".Activity.GiangVienAcitivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:label="@string/giangvien" />
         <activity
             android:name=".Activity.SoYeuLiLichActivity"
@@ -39,6 +40,7 @@
             android:label="@string/app_name" />
         <activity
             android:name=".Activity.GiangVienActivity2"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:label="@string/giangvien" />
         <activity
             android:name=".Activity.LoginActivity"
@@ -51,6 +53,7 @@
             android:label="@string/app_name" />
         <activity
             android:name=".Activity.GiangVienActivity3"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:label="@string/giangvien" />
         <activity
             android:name=".Activity.XemThongTin"

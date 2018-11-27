@@ -1,7 +1,7 @@
 package com.qlnhansu.app.quanlynhansu.CheckUrl;
 
 public class UrlConnect {
-    public static String localhost = "192.168.99.1";
+    public static String localhost = "192.168.43.9";
     public static String getdatagv = "http://"+localhost+":81/quanlynhansu/getDataGV.php";
     public static String themGV = "http://"+localhost+":81/quanlynhansu/addGiangVien.php";
     public static String capnhatGV = "http://"+localhost+":81/quanlynhansu/editGV.php";
